@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SparklyRose </title>
+    <link rel="stylesheet" href="product_info.css">
+</head>
+
+<body>
+    <!-- Top And Navigation -->
+    <div class="top">
+        <p>Free Shipping Overwide</p>
+    </div>
+    <div class="navbar">
+        <img src="photos/logo.png" class="logo" style="padding-right: 16%;">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product_info.html">Product Info</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="track.html">Track</a></li>
+        </ul>
+        <button type="button"  onclick="openNav()"><img src="photos/cart.png" style="cursor: pointer; width: 25px; position: absolute; right: 20%; top: 30%;"></button>
+    </div>
+    <h2> The Perfect Gift For Your Valentine Partner</h2>
+    <!-- Product -->
+    <div class="product_home">
+        <div class="product_info">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="photos/roses READY-2.jpg" style="width:100%">
+                <div class="text">******** *********</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/roses READY-3.jpg" style="width:100%">
+                <div class="text">******** *********</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/roses READY-4.jpg" style="width:100%">
+                <div class="text">******** *********</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="product_info">
+            <h1>Sparky Rose</h1><br>
+            <h3 style=" text-decoration:underline ;">price:</h3><br>
+            <h3>$42.39</h3><br><br><br>
+            <h3>-free shipping!</h3><br><br><br>
+            <h3>-perfect gift to symbolize a magical, loving relationship!</h3><br><br><br>
+            <h3>-a constant reminder of your love even when away!</h3><br><br><br>
+            <h3>-10,000+ satisfied customers!</h3><br><br><br>
+            <form name="form">
+                <select class="feat" name="color">
+                    <option value="red">red</option>
+                    <option value="white">white</option>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="purple">purple</option>
+                </select>
+                <select class="feat" name="base">
+                    <option>wooden</option>
+                    <option>black</option>
+                </select>
+                <br>
+                <button type="button" class="cart" onclick="openNav()">add to cart</button><br><br>
+            </form>
+        </div>
+    </div>
+    <div class="why_buy">
+        <div class="why_buy_info">
+            <h2>Why Buy From Us</h2>
+            <div style="display: flex;">
+                <img src="photos/heart.png" style="width: 55px; height: 55px; margin-top: 12%;">
+                <p><span>Fist best a valentine present</span><br>
+                The point of a valentime gift is to make your partner
+                feel loved and thought of. Don't go crazy and waste too
+                much money, Go simple for a more meaningful result</p>
+            </div>
+            <div style="display: flex;">
+                <img src="photos/dollar.png" style="width: 55px; height: 55px; margin-top: 12%;">
+                <p><span>Best prices for best quality</span><br>
+                We know how important it is to not disappoint and get
+                disappointed on this magical holiday. What you see is
+                what you get and for the fitting price!</p>
+            </div>
+            <div style="display: flex;">
+                <img src="photos/globe.png" style="width: 55px; height: 55px; margin-top: 10%;">
+                <p><span>Free Shipping Throughout the USA!</span><br>
+                We will get the device to your home for free in the
+                matter of 5-25 days!</p>
+            </div>
+        </div>
+        <img src="photos/thumb.jpg" style="margin-left: 55.95%; width: 44%;">
+    </div>
+    <div class="what_to_ex">
+        <h1 style="padding: 5% 0%;">What To Expect From Us</h1>
+        <div class="expect">
+            <img src="photos/love.png" style="width: 55px; height: 55px;">
+            <h2>A happy Partner</h2>
+        </div>
+        <div class="expect">
+            <img src="photos/plane.png" style="width: 55px; height: 55px;">
+            <h2>Free Shipping</h2>
+        </div>
+        <div class="expect">
+            <img src="photos/responsive.png" style="width: 55px; height: 55px;">
+            <h2>Responsive Customer Service</h2>
+        </div>
+        <div class="expect">
+            <img src="photos/smile.png" style="width: 55px; height: 55px;">
+            <h2>10,000+ Satisfied Customers</h2>
+        </div>
+    </div>
+    <div class="people_love">
+        <h1 style="padding: 5% 0%;">PEOPLE EXPRESS LOVE<br>with our magical roses</h1>
+    </div>
+    <h3 class="dont_wait">DON'T WAIT! Due to high demand we often sell out. If you have any hesitation let us know and sign up to keep track</h3>
+    <div class="faqs">
+        <h1 style="padding: 5% 0%;">FAQ's</h1>
+        <p><span onclick="answer1(), answer12()" class="heads" id="head1">Why Buy This Gift?</span><br><span id="more1" class="ans">
+        First of all, it is a unique gift that will amaze and touch the important person who will receive it.<br>
+        It is magical to look at and will remind the receiver of their magical loved one who got them this special gift.<br>
+        Plus it would lokk amazing in every room adding magic to it.</span></p>
+        <p><span onclick="answer2()" class="heads" id="head2">Who Is It Perfect For?</span><br><span id="more2" class="ans">
+        Every person you love! Your girlfriend or brother, your mother or father, grandma and grandpa or your little sister. You can shoot<br>
+        Your shot and buy one to your crush (We dare you), or your best friend to show them how much you love and thankful to them.<br>
+        Whoever you fell like deserves it!</span></p>
+        <p><span onclick="answer3()" class="heads" id="head3">What Is The Estimated Delivery Time?</span><br><span id="more3" class="ans">
+        We offer shipping tracking worldwide. You can track your order anytime with your tracking code. Shipping within the US<br>
+        takes 5-25 days.</span></p>
+        <p><span onclick="answer4()" class="heads" id="head4">How Can I Contact Regarding Further Questions?</span><br><span id="more4" class="ans">
+        Use the "Contact Us" tab or send us an e-mail to sparkofrose@gmail.com</span></p>
+    </div>
+
+    <div class="marks">
+        <div class="mark">
+            <image src="photos/tag.png" style="width:7%">
+            <br>
+            <h4>Free Shipping</h4>
+            <h5>We ship worldwide for free!</h5>
+        </div>
+        <div class="mark">
+            <image src="photos/tag.png" style="width:7%">
+            <br>
+            <h4>A Large Variety</h4>
+            <h5>Find the one most suitable for you!</h5>
+        </div>
+        <div class="mark">
+            <image src="photos/tag.png" style="width:7%">
+            <br>
+            <h4>10,000+ Satisfied Customers</h4>
+            <h5>Love helping you express your love!</h5>
+        </div>
+    </div>
+
+    <h3 class="follow_on_sm">Follow us on social media!</h3>
+    <div class="about_us">
+        <div class="aqb">
+            <h3>About Us</h3><br>
+            <p>We ourselves are two close partners and we present<br>
+                to you our variety of charming and magical roses to<br>
+                express your love to your partner!<br><br>
+                sparkofrose@gmail.com<br>
+                0586881160
+            </p>
+        </div>
+        <div class="aqb">
+            <h3>Quick Links</h3><br>
+            <a href="#">Search</a><br>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">Terms Of Sevice</a><br>
+            <a href="#">Return Policy</a>
+        </div>
+        <div class="aqb">
+            <h3>Become One Of Us</h3><br>
+            <p>By subscribing you'll be one of the few to know about<br>new must-have products and receive discounts!</p><br>
+            <form>
+                <input type="text" placeholder="   First Name"><br><br>
+                <input type="text" placeholder="   Email@gmail.com"><br><br>
+                <input type="submit" style="height: 42px;">
+            </form>
+        </div>
+    </div>
+    <button onclick="scrollToTop()" id="myBtn" >^</button>
+    <div id="mySidenav" class="sidebar">
+        <div style="display:flex;">
+            <h2 class="sidebar_text">Your Cart</h2>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        <ul>
+            <li><a href="#">D</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">D</a></li>
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
