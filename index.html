@@ -10,18 +10,18 @@
 
 <body>
     <!-- Top And Navigation -->
-    <div class="top">
+    <div id="top">
         <p>Free Shipping Overwide</p>
     </div>
     <div class="navbar">
-        <img src="photos/logo.png" class="logo">
-        <ul>
+        <img src="photos/logo.png" id="logo" class="navbarEl">
+        <ul class="navbarEl">
             <li><a href="index.html">Home</a></li>
             <li><a href="product_info.html">Product Info</a></li>
             <li><a href="contact_us.html">Contact Us</a></li>
             <li><a href="track.html">Track</a></li>
         </ul>
-        <button type="button"  onclick="openNav()"><img src="photos/cart.png" style="cursor: pointer; width: 25px; position: absolute; right: 20%; top: 30%;"></button>
+        <button class="navbarEl" type="button"  onclick="openNav()"><img src="photos/cart.png"></button>
     </div>
 
     <!-- Background -->
@@ -40,20 +40,58 @@
     <div class="product_home">
         <div class="product_info">
             <!-- Full-width images with number and caption text -->
+            
             <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-                <img src="photos/roses READY-2.jpg" style="width:100%">
-                <div class="text">******** *********</div>
+                <img src="photos/zolors.webp" style="width:100%">
+                <div class="text">red wooden base</div>
             </div>
             <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="photos/roses READY-3.jpg" style="width:100%">
-                <div class="text">******** *********</div>
+                <img src="photos/zolors (5).webp" style="width:100%">
+                <div class="text">red black base</div>
             </div>
             <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="photos/roses READY-4.jpg" style="width:100%">
-                <div class="text">******** *********</div>
+                <img src="photos/zolors (11).webp" style="width:100%">
+                <div class="text">light wooden base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors (10).webp" style="width:100%">
+                <div class="text">light black base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors (4).jpg" style="width:100%">
+                <div class="text">pink wooden base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors (1).webp" style="width:100%">
+                <div class="text">pink black base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors (2).webp" style="width:100%">
+                <div class="text">purple wooden base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors (1).jpg" style="width:100%">
+                <div class="text">purple black base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors.jpg" style="width:100%">
+                <div class="text">white wooden base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors (3).webp" style="width:100%">
+                <div class="text">white black base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors (9).webp" style="width:100%">
+                <div class="text">blue wooden base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors (6).webp" style="width:100%">
+                <div class="text">blue black base</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/zolors (8).webp" style="width:100%">
+                <div class="text">golden wooden base</div>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -65,13 +103,15 @@
             <label id="bcolor" style="position:absolute; left: 51%;">Base Color: wooden</label>
             <form name="form">
                 <select class="feat" name="color" onchange="getColor()">
-                    <option value="red">red</option>
-                    <option value="white">white</option>
-                    <option value="black">black</option>
-                    <option value="blue">blue</option>
-                    <option value="purple">purple</option>
+                    <option>red</option>
+                    <option>light</option>
+                    <option>pink</option>
+                    <option>purple</option>
+                    <option>white</option>
+                    <option>blue</option>
+                    <option>golden</option>
                 </select>
-                <select class="feat" name="base" onchange="getBase()">
+                <select class="feat" name="base" onchange="getColor()">
                     <option>wooden</option>
                     <option>black</option>
                 </select><br>
