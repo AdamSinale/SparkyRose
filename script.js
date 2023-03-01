@@ -21,9 +21,13 @@
 
     function getColor(){
         document.getElementById('rcolor').innerHTML=("Rose Color: "+form.color[form.color.selectedIndex].text);
-    }
-    function getBase(){
         document.getElementById('bcolor').innerHTML=("Base Color: "+form.base[form.base.selectedIndex].text);
+        if(form.base.selectedIndex == 0){
+          showSlides(slideIndex = form.color.selectedIndex*2+1);
+        }
+        else{
+          showSlides(slideIndex = form.color.selectedIndex*2+2);
+        }
     }
 
     let slideIndex = 1;
@@ -31,10 +35,6 @@
     // Next/previous controls
     function plusSlides(n) {
         showSlides(slideIndex += n);
-    }
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
     }
     function showSlides(n) {
         let i;
@@ -85,5 +85,6 @@
         if (more4Text.style.display == "inline") {more4Text.style.display = "none";}
         else { more4Text.style.display = "inline";}
       }
+
 
     
