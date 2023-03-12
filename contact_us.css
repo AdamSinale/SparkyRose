@@ -40,6 +40,7 @@
   top:0;
   z-index: 1;
   text-align: center;
+  border-bottom: 1px solid grey;
 }
 .navbar ul{
   margin-top: 0px;
@@ -117,6 +118,9 @@ h4{
   padding:1.5% 7%;
   vertical-align: top;
 }
+  .aqb a{
+    color: #000;
+  }
 input, textarea{
   width: 50%;
   height: 26px;

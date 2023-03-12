@@ -45,6 +45,7 @@
   top:0;
   z-index: 1;
   text-align: center;
+  border-bottom: 1px solid grey;
 }
 .navbar ul{
   margin-top: 0px;
@@ -220,9 +221,8 @@ h4{
   .text {
     color: #f2f2f2;
     font-size: 15px;
-    padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 9%;
     width: 100%;
     text-align: center;
   }
@@ -245,6 +245,25 @@ h4{
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+  .cursor{
+    cursor: pointer;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    width: 7.69%;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
   }
   .mark{
     margin: 1.5%;
@@ -269,6 +288,9 @@ h4{
     padding:1.5% 7%;
     vertical-align: top;
   }
+  .aqb a{
+    color: #000;
+  }
   input{
     width: 77%;
     height: 26px;
@@ -277,6 +299,9 @@ h4{
   p, a{
     font-family: trebuchet ms ,sans-serif;
     font-size: 103%;
+  }
+  .aqb form input{
+    width: 100%;
   }
   #myBtn {
     display: none; /* Hidden by default */
@@ -298,9 +323,6 @@ h4{
   
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
-  }
-  .aqb form input{
-    width: 100%;
   }
   .sidebar{
     position: fixed;

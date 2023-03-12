@@ -43,8 +43,9 @@ background-position: center;
   background-color: #fff;
   position:sticky;
   top:0;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
+  border-bottom: 1px solid grey;
 }
 .navbar ul{
   margin-top: 0px;
@@ -166,9 +167,8 @@ font-weight: 540;
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 9%;
   width: 100%;
   text-align: center;
 }
@@ -183,6 +183,25 @@ font-weight: 540;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+.cursor{
+  cursor: pointer;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 7.69%;
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
 }
 
 .why_buy{
@@ -233,6 +252,9 @@ font-weight: 540;
 .people_love{
   background-color: #640d0d; 
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .people_love h1{
   font-family: comic sans ms, cursive;
@@ -305,6 +327,9 @@ h2{
 .aqb form input{
   width: 100%;
 }
+  .aqb a{
+    color: #000;
+  }
 
 
 
@@ -359,7 +384,7 @@ h2{
   height: 35px;
   font-size: 36px;
   background-color: #fff;
-  border-radius: 7px; /* Rounded corners */
+  border-radius: 7px; 
   margin-top: 15px;
   padding: 0% 2%;
 }
@@ -387,4 +412,53 @@ h2{
   color: cyan;
   background: red;
   border-left-color:cyan;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 39%;
+  padding: 40px 0;
+}
+.card-image{
+  height: 180px;
+  width: 180px;
+  background: #960000;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+}
+.button:hover{
+  background: #6e0909;
+}
+
+.swiper-navBtn{
+  color: #db2626;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #6e0909;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #db2626;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4b0909;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn{
+    display: none;
+  }
 }

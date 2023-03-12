@@ -30,7 +30,7 @@
             <h1>Sparky Rose</h1>
             <p>Buy 2 - 5% off<br>Buy 3 - 10% off</p>
             <div>
-                <button type="button" class="button"><span></span>Shop Now</button>
+                <a href="product_info.html"><button type="button" class="button"><span></span>Shop Now</button></a>
                 <button type="button" class="button"><span></span>See More</button>
             </div>
         </div>
@@ -95,6 +95,47 @@
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors.webp" style="width:100%" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (5).webp" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (11).webp" style="width:100%" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (10).webp" style="width:100%" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (4).jpg" style="width:100%" onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (1).webp" style="width:100%" onclick="currentSlide(6)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (2).webp" style="width:100%" onclick="currentSlide(7)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (1).jpg" style="width:100%" onclick="currentSlide(8)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors.jpg" style="width:100%" onclick="currentSlide(9)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (3).webp" style="width:100%" onclick="currentSlide(10)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (9).webp" style="width:100%" onclick="currentSlide(11)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (6).webp" style="width:100%" onclick="currentSlide(12)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="photos/zolors (8).webp" style="width:100%" onclick="currentSlide(13)">
+                </div>
+              </div>
         </div>
         <div class="product_info">
             <h1>Sparky Rose</h1><br>
@@ -169,7 +210,9 @@
             </form>
         </div>
     </div>
+
     <button onclick="scrollToTop()" id="myBtn" >^</button>
+
     <div id="mySidenav" class="sidebar">
         <div style="display:flex;">
             <h2 class="sidebar_text">Your Cart</h2>
@@ -181,6 +224,7 @@
             <li><a href="#">D</a></li>
             <li><a href="#">D</a></li>
         </ul>
+        <a href="checkout.html"><button style="position:absolute;bottom:20px;left:2.5%;width:95%;height:50px;border-radius:25px;cursor:pointer;">Check Out</button></a>
     </div>
 </body>
 <script src="script.js"></script>

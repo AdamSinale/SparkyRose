@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SparklyRose </title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="ordered.html" method="GET">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">billing address</h3>
+                    <div class="inputBox">
+                        <label for="full_name">full name :</label>
+                        <input type="text" id="full_name" name="full name" placeholder="first name" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">email :</label>
+                        <input type="email" id="email" name="email" placeholder="Example@gmail.com" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="address">address :</label>
+                        <input type="text" id="address" name="address" placeholder="room - street - locality" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="city">city :</label>
+                        <input type="text" id="city" name="city" placeholder="city" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="state">state :</label>
+                            <input type="text" id="state" name="state" placeholder="state" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="zip_code">zip code :</label>
+                            <input type="text" id="zip_code" name="zip code" placeholder="123 456" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">payment</h3>
+                    <div class="inputBox">
+                        <label>cards accepted :</label>
+                        <img src="photos/cards.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <label for="card_name">name on card :</label>
+                        <input type="text" id="card_name" name="card name" placeholder="full name" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="card_num">credit card number :</label>
+                        <input type="number" id="card_num" name="card number" placeholder="1111-2222-3333-4444" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="card_date">exp date :</label>
+                        <input type="month" id="card_date" name="card date" min="2023-03" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="card_cvv">CVV :</label>
+                            <input type="text" id="card_cvv" name="card cvv" placeholder="123" required>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="proceed to checkout" class="submit">
+        </form>
+    </div>
+</body>
+</html>
